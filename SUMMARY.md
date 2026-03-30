@@ -4,7 +4,7 @@
 
 * [Overview](README.md)
 
-## Reference
+## Features
 
 * [Workspaces](workspaces.md)
 * [Interface](interface.md)
