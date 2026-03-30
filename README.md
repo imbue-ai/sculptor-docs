@@ -1,6 +1,6 @@
 # Sculptor
 
-![Sculptor](images/sculptor-hero.png)
+<img src="images/sculptor-hero.png" width="70%">
 
 Sculptor is a desktop app for managing agentic coding workflows. You give it a task, and it runs an agent against your codebase. Sculptor helps with handling the conversation, tracking progress, and showing you the diffs when it's done.
 
