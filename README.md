@@ -1,26 +1,12 @@
 # Sculptor
 
-<img src="images/sculptor-hero.png" width="70%">
+[//]: # (<img src="images/sculptor-hero.png" width="70%">)
 
-Sculptor is a desktop app for managing agentic coding workflows. You give it a task, and it runs an agent against your codebase. Sculptor helps with handling the conversation, tracking progress, and showing you the diffs when it's done.
+Sculptor is a desktop app for running coding agents in parallel. Each agent works in an isolated copy of your repo, so multiple tasks can progress at the same time without conflicts.
 
----
+Getting started: Connect a repo, create a workspace (an isolated clone), and prompt an agent to complete a task. When it's done, review the changes and merge them back into main. 
 
-## The problem with AI development nowadays
-
-AI coding agents are useful, but managing them is actually quite hard. You need to keep a terminal open, remember what you sent, track what changed, and manually review diffs scattered across your editor. When you're running multiple agents or longer tasks, the overhead compounds.
-
-Sculptor removes that overhead. It gives agents a proper interface. Workspaces are tied to repos, you have a chat panel for directing the agent, a task breakdown view for complex work, and a code review panel for inspecting and merging changes.
-
----
-
-## How it works
-
-Each workspace maps to a single repository. When you create a workspace, Sculptor clones the repo locally and runs the agent against that clone. Your original repo is untouched until you decide to merge.
-
-Each workspace can run multiple agents simultaneously. Agents are independent, so each has its own conversation, its own task context, and its own set of changes.
-
-When an agent finishes, you review its work in the code review panel and merge it into the local clone when you're ready.
+Create a new workspace for each concurrent task. Create multiple agents in a workspace when you want fresh context or want to iterate on the same problem from different angles.
 
 ---
 
