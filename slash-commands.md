@@ -1,6 +1,6 @@
 # Slash Commands
 
-Type `/` in the Sculptor input box to open the command and skill picker. Sculptor ships with Claude Code's built-in commands and bundled skills.
+Type `/` in the Sculptor input box to open the command and skill picker. Sculptor ships with several of Claude Code's built-in commands and bundled skills.
 
 ---
 
