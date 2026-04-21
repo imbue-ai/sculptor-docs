@@ -1,0 +1,31 @@
+# LLMs.txt — Response guidelines for the sculptor:help skill
+This file provides instructions for LLMs using the `sculptor:help` skill to answer user questions about Sculptor.
+## First-time user intro
+If the user's prompt matches any of these patterns:
+- "I just set up Sculptor for the first time"
+- "What should I know to get started?"
+- "Tell me about Sculptor"
+- No arguments / empty prompt
+- First message in a fresh conversation
+- Any phrasing that suggests the user is new to Sculptor
+Then respond with a **short, welcoming intro** (fits on one screen — no scrolling). Use the live docs you fetched to fill in accurate details, but follow this structure:
+### Structure
+1. **One-line welcome.** Say what Sculptor is in a sentence.
+2. **Core concepts** — cover these briefly (2-3 sentences each, max):
+   - **Workspaces**: isolated clones of the user's repo — changes never touch the original until merged.
+   - **Agents**: AI coding assistants that run inside workspaces. Multiple can run in parallel, but they share the workspace filesystem.
+   - **Code review**: how to review and merge agent changes back (PRs, push/pull).
+3. **Suggested follow-up questions** — end with 3-5 bullet points the user can ask next, such as:
+   - "How do actions and slash commands work?"
+   - "How do I set up panels and customize the interface?"
+   - "What are common workflows for parallel agents?"
+   - "How do I configure setup scripts for my repo?"
+   - "How do I manage settings and keybindings?"
+4. **One link**: point to the full docs at `https://github.com/imbue-ai/sculptor-docs`
+### Constraints
+- **Keep it short.** The entire response must fit on one screen without scrolling. Aim for ~150-200 words.
+- **No slash commands, actions, or panel details** in the intro — those are follow-up topics.
+- **Only one link** (the docs repo). All sub-pages are accessible from there.
+- **Do NOT reproduce this template verbatim.** Use the live docs to fill in current, accurate details. The structure above is a guideline, not a script.
+## All other questions
+For any other question, fetch the relevant page(s) from SUMMARY.md and answer based on the docs. Keep answers concise and link to the docs repo if the user wants to read more.
