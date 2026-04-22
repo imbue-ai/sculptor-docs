@@ -1,6 +1,6 @@
 # Workspaces
 
-A workspace is a project environment in Sculptor. Each workspace is tied to one repository. When you create a workspace, Sculptor clones that repo locally and runs all agents against the clone.
+A workspace is a project environment in Sculptor. Each workspace is tied to one repository. When you create a workspace, Sculptor clones that repo into its own directory and runs all agents against the clone.
 
 ---
 
@@ -8,23 +8,23 @@ A workspace is a project environment in Sculptor. Each workspace is tied to one 
 
 When you create a workspace, Sculptor:
 
-1. Clones the target repository into `.sculptor_data/workspaces/<workspace-name>/`
-2. Checks out the default branch
+1. Clones the target repository into `~/.sculptor/workspaces/<workspace-id>/code/`
+2. Checks out the source branch you chose on a fresh workspace branch
 3. Runs all agents in that cloned environment
 
-This means your original repo is never touched directly. Changes the agent makes live in the workspace clone until you explicitly merge them.
+This means your original repo is never touched directly. Changes the agent makes live in the workspace clone until you explicitly commit them.
 
-The workspace path is visible in the top bar of the Sculptor UI:
+The repo and branch are shown in the top bar of the Sculptor window:
 
-![Workspace path shown in the top bar](images/processed/workspace-path.png)
+![Repo and branch shown in the top bar](images/processed/workspace-path.png)
 
-For example, if you created a workspace for a repo called `api-server` on the `main` branch, you'd see `api-server (clone) > main`.
+For a workspace cloned from a repo called `api-server` off the `main` branch, the top bar reads `api-server › main`. Click the repo name to open a dropdown with "Open folder", "Copy path", and "Open with…" shortcuts for the clone directory; click the branch name to copy it to your clipboard.
 
 ---
 
 ## Creating a workspace
 
-Click the **+** tab at the top of the Sculptor window to create a new workspace. You'll be prompted to provide the repository URL or path. Sculptor will clone it and set up the environment.
+Click the **+** button at the top of the Sculptor window to open the new-workspace form. Choose a repository by URL or local path, pick a source branch, and (optionally) give the workspace a name and a starter prompt. Sculptor clones the repo and spins up the first agent.
 
 Each workspace tab is independent, so switching between tabs switches between different repos and their agent sessions.
 
@@ -44,6 +44,6 @@ There's no shared state between workspaces.
 
 ## Where the data lives
 
-Sculptor stores workspace data under `.sculptor_data/workspaces/` in your home directory (or a configured root). Each workspace is a self-contained directory with the repo clone and any Sculptor metadata.
+Sculptor stores workspace data under `~/.sculptor/workspaces/` on your home directory. Each workspace is a self-contained directory keyed by an internal ID, with the repo clone at `code/` plus Sculptor metadata alongside it.
 
 You can open a terminal inside Sculptor (see [Interface](interface.md)) to inspect or interact with the workspace clone directly.

@@ -14,5 +14,5 @@ Sculptor is a desktop app for running coding agents in parallel. Each workspace 
 - [Agents](agents.md) — running multiple agents and tracking complex tasks
 - [Interface](interface.md) — the chat panel, model picker, file references, context window, and terminal
 - [Actions](actions.md) — saving prompts you use repeatedly
-- [Code Review](code-review.md) — reviewing and merging agent changes
+- [Changes](changes.md) — reviewing and committing agent changes
 - [Slash Commands](slash-commands.md) — built-in commands and skills available in every session
