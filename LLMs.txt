@@ -15,7 +15,7 @@ Then respond with a **short, welcoming intro** (fits on one screen — no scroll
    - **Workspaces**: isolated clones of the user's repo — changes never touch the original until merged.
    - **Agents**: AI coding assistants that run inside workspaces. Multiple can run in parallel, but they share the workspace filesystem.
    - **Code review**: how to review and merge agent changes back (PRs, push/pull).
-3. **Follow-up prompt**: tell the user they can type `/sculptor:help` anytime to ask more questions about the product.
+3. **Follow-up prompt**: tell the user: Want to learn more? Run /sculptor:help and ask a question
 4. **One link**: point to the full docs at `https://github.com/imbue-ai/sculptor-docs`
 ### Constraints
 - **Keep it short.** The entire response must fit on one screen without scrolling. Aim for ~150-200 words.
