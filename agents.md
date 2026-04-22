@@ -6,11 +6,11 @@ Each agent in Sculptor has its own conversation, task context, and set of pendin
 
 ## Opening multiple agents
 
-The agent tab bar runs along the bottom of the Sculptor window. Each tab is a separate agent session.
+The agent tab bar sits below the chat panel, between the chat and the terminal. Each tab is a separate agent session.
 
-![Agent tabs at the bottom of Sculptor](images/processed/agent-tabs.png)
+![Agent tabs between the chat and the terminal](images/processed/agent-tabs.png)
 
-- Click **+ Agent** to open a new agent in the current workspace
+- Click the **+** button at the right end of the tab bar to open a new agent in the current workspace
 - Click any tab to switch between agents
 - Each agent maintains its own conversation history independently
 

@@ -10,7 +10,7 @@
 * [Interface](interface.md)
 * [Agents](agents.md)
 * [Actions](actions.md)
-* [Code Review](code-review.md)
+* [Changes](changes.md)
 * [Slash Commands](slash-commands.md)
 
 ## Guides
